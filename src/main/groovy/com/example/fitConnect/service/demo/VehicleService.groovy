@@ -1,7 +1,7 @@
-package com.example.fitConnect.service
+package com.example.fitConnect.service.demo
 
-import com.example.fitConnect.domain.Vehicle
-import com.example.fitConnect.domain.Manufacturer
+import com.example.fitConnect.domain.demo.Vehicle
+import com.example.fitConnect.domain.demo.Manufacturer
 import org.springframework.stereotype.Service
 import groovy.transform.CompileStatic
 import grails.gorm.services.Where

@@ -1,6 +1,6 @@
 package com.example.fitConnect.controller
 
-import com.example.fitConnect.service.VehicleService
+import com.example.fitConnect.service.demo.VehicleService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping

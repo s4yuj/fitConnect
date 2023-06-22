@@ -1,8 +1,8 @@
 package com.example.fitConnect.init
 
-import com.example.fitConnect.domain.Manufacturer
-import com.example.fitConnect.domain.Vehicle
-import com.example.fitConnect.service.ManufacturerService
+import com.example.fitConnect.domain.demo.Manufacturer
+import com.example.fitConnect.domain.demo.Vehicle
+import com.example.fitConnect.service.demo.ManufacturerService
 import grails.gorm.transactions.Transactional
 import groovy.transform.CompileStatic
 import org.springframework.beans.factory.annotation.Autowired

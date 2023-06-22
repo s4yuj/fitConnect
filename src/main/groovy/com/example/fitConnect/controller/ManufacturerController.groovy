@@ -1,6 +1,6 @@
 package com.example.fitConnect.controller
 
-import com.example.fitConnect.service.ManufacturerService
+import com.example.fitConnect.service.demo.ManufacturerService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController

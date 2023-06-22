@@ -1,4 +1,5 @@
-package com.example.fitConnect.domain
+package com.example.fitConnect.domain.demo
+
 
 import grails.gorm.annotation.Entity
 import groovy.transform.ToString
