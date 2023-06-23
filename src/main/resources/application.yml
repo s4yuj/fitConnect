@@ -8,3 +8,5 @@ spring:
     url: jdbc:h2:mem:devDb
     username: sa
     password: ""
+  h2:
+    console.enabled: true

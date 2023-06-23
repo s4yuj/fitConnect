@@ -1,7 +1,10 @@
 package com.example.fitConnect.init
 
+import com.example.fitConnect.domain.Activity
+import com.example.fitConnect.domain.Athlete
 import com.example.fitConnect.domain.demo.Manufacturer
 import com.example.fitConnect.domain.demo.Vehicle
+import com.example.fitConnect.service.ifc.AthleteService
 import com.example.fitConnect.service.demo.ManufacturerService
 import grails.gorm.transactions.Transactional
 import groovy.transform.CompileStatic
@@ -14,7 +17,10 @@ import org.springframework.stereotype.Component
 class BootStrap {
 
     @Autowired
-   ManufacturerService manufacturerService
+    ManufacturerService manufacturerService
+
+    @Autowired
+    AthleteService athleteService
 
     @Transactional
     void init() {
@@ -23,5 +29,14 @@ class BootStrap {
         audi.addToVehicles(new Vehicle(name: "A4", year: 1994))
 
         manufacturerService.save(audi)
+
+        Athlete sayuj = new Athlete(name: "Sayuj",
+                age: 19,
+                score: 100)
+
+        sayuj.addToActivities(new Activity(name: "Run", score: 50))
+        sayuj.addToActivities(new Activity(name: "Cycle", score: 30))
+
+        athleteService.save(sayuj)
     }
 }

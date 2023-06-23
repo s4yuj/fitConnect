@@ -1,4 +1,4 @@
-package com.example.fitConnect.controller
+package com.example.fitConnect.controller.demo
 
 import com.example.fitConnect.service.demo.ManufacturerService
 import org.springframework.beans.factory.annotation.Autowired

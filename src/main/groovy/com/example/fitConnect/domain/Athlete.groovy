@@ -20,5 +20,7 @@ class Athlete implements GormEntity<Athlete> {
     static constraints = {
         name blank: false //name not blank
         score min: 0 //score > 0
+        team nullable: true
+        activities nullable: true
     }
 }

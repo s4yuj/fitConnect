@@ -8,12 +8,10 @@ import grails.gorm.services.Where
 
 
 @CompileStatic
-@grails.gorm.services.Service(Vehicle)
+@grails.gorm.services.Service(value = Vehicle)
 @Service
 interface VehicleService {
 
     @Where({ Manufacturer.name == manufacturerName })
     List<Vehicle> findAllByManufacturer(String manufacturerName)
-
-
 }
