@@ -23,4 +23,6 @@ class Athlete implements GormEntity<Athlete> {
         team nullable: true
         activities nullable: true
     }
+
+    //TODO: create a constructor that adds all activity scores to generate athlete score
 }

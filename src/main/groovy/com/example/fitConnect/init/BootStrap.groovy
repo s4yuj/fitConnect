@@ -4,8 +4,10 @@ import com.example.fitConnect.domain.Activity
 import com.example.fitConnect.domain.Athlete
 import com.example.fitConnect.domain.Challenge
 import com.example.fitConnect.domain.Organiser
+import com.example.fitConnect.domain.Team
 import com.example.fitConnect.domain.demo.Manufacturer
 import com.example.fitConnect.domain.demo.Vehicle
+import com.example.fitConnect.service.data.TeamDataService
 import com.example.fitConnect.service.demo.ManufacturerService
 import com.example.fitConnect.service.data.AthleteDataService
 import grails.gorm.transactions.Transactional
@@ -23,6 +25,9 @@ class BootStrap {
 
     @Autowired
     AthleteDataService athleteDataService
+
+    @Autowired
+    TeamDataService teamDataService
 
     @Transactional
     void init() {
@@ -50,5 +55,11 @@ class BootStrap {
         //TODO: Fix DateTime format.
 
         athleteDataService.save(abhay)
+
+        Team teamWinners = new Team(name: 'teamWinners', teamScore: 0)
+        teamWinners.addToAthletes(sayuj)
+        teamWinners.addToAthletes(abhay)
+
+        teamDataService.save(teamWinners)
     }
 }

@@ -16,4 +16,7 @@ class Team implements GormEntity<Team> {
         athletes minsize: 1, maxSize: 5 // must have between 1 and 5 athletes
         teamScore min : 0 //score > 0
     }
+
+
+    //TODO: create a constructor that adds all athlete scores to generate team score
 }
