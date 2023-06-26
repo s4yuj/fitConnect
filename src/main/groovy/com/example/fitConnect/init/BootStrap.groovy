@@ -2,6 +2,8 @@ package com.example.fitConnect.init
 
 import com.example.fitConnect.domain.Activity
 import com.example.fitConnect.domain.Athlete
+import com.example.fitConnect.domain.Challenge
+import com.example.fitConnect.domain.Organiser
 import com.example.fitConnect.domain.demo.Manufacturer
 import com.example.fitConnect.domain.demo.Vehicle
 import com.example.fitConnect.service.demo.ManufacturerService
@@ -38,5 +40,15 @@ class BootStrap {
         sayuj.addToActivities(new Activity(name: "Cycle", score: 30))
 
         athleteDataService.save(sayuj)
+
+        Athlete abhay = new Organiser(name: "Abhay", age: 48, score: 0, challenges: null)
+
+        abhay.addToChallenges(new Challenge(name: "JulyChallenge",
+                                            startDate: new Date(2023, 07, 01),
+                                            endDate: new Date(2023, 07, 31)))
+
+        //TODO: Fix DateTime format.
+
+        athleteDataService.save(abhay)
     }
 }

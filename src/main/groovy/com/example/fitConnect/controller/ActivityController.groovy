@@ -1,6 +1,5 @@
 package com.example.fitConnect.controller
 
-import com.example.fitConnect.domain.Activity
 import com.example.fitConnect.service.Impl.ActivityService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.PathVariable
