@@ -4,9 +4,8 @@ import com.example.fitConnect.domain.Activity
 import com.example.fitConnect.domain.Athlete
 import com.example.fitConnect.domain.demo.Manufacturer
 import com.example.fitConnect.domain.demo.Vehicle
-import com.example.fitConnect.service.Impl.AthleteService
 import com.example.fitConnect.service.demo.ManufacturerService
-import com.example.fitConnect.service.ifc.AthleteDataService
+import com.example.fitConnect.service.data.AthleteDataService
 import grails.gorm.transactions.Transactional
 import groovy.transform.CompileStatic
 import org.springframework.beans.factory.annotation.Autowired

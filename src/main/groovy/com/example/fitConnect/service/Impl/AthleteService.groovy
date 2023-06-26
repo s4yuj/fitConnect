@@ -1,7 +1,7 @@
 package com.example.fitConnect.service.Impl
 
 import com.example.fitConnect.domain.Athlete
-import com.example.fitConnect.service.ifc.AthleteDataService
+import com.example.fitConnect.service.data.AthleteDataService
 import grails.gorm.transactions.Transactional
 import groovy.transform.CompileStatic
 import org.springframework.beans.factory.annotation.Autowired

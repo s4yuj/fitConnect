@@ -1,8 +1,7 @@
-package com.example.fitConnect.service.ifc
+package com.example.fitConnect.service.data
 
 import com.example.fitConnect.domain.Athlete
 import grails.gorm.services.Where
-import grails.gorm.transactions.Transactional
 import groovy.transform.CompileStatic
 import org.springframework.stereotype.Service
 
